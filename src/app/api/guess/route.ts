@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { generateBase64PriceImage } from '@/utils/image'
+import { generateBase64Image as generateBase64Image } from '@/utils/image'
 
 async function getResponse(req: NextRequest): Promise<NextResponse> {
 
-const image = await generateBase64PriceImage();
+const image = await generateBase64Image();
 
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>Magic 8 ball</title>        

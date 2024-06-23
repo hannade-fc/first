@@ -52,7 +52,7 @@ const generatePriceImageSvg = async () : Promise<string> => {
 };
 
 
-export const generateBase64PriceImage = async () => {
+export const generateBase64Image = async () => {
     const svg = await generatePriceImageSvg();
     return (await sharp(Buffer.from(svg)).toFormat("png").toBuffer()).toString("base64");
 };

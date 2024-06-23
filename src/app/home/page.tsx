@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Magic 8 ball Frame',
-  description: 'A Farcaster magic 8 ball',
+  description: 'Farcaster magic 8 ball',
   openGraph: {
     title: 'Magic 8 ball Frame',
-    description: 'A magic 8 ball',
+    description: 'Magic 8 ball',
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/preview.gif`],
   },
   other: {
